@@ -1,0 +1,111 @@
+/*base.css*/
+body, input, textarea, select, button {
+    font: 12px "Microsoft YaHei", Verdana, arial, sans-serif;
+    line-height: 22px;
+}
+body, ul, ol, li, dl, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset, table {
+    margin: 0;
+    padding: 0
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+a {
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #3278e6;
+}
+a:hover {
+    outline: none;
+    color: #78aaf0;
+    text-decoration: none;
+}
+/*result-info*/
+.result-info {
+    width: 600px;
+}
+.result-info td {
+    padding: 7px;
+    color: #828282;
+}
+.result-info .status {
+    width: 30px;
+    position: relative;
+}
+.result-info .status:before{
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+    background-color: #ccc;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.result-info .status:after{
+    content: '';
+    position: absolute;
+    width:1px;
+    height: 100%;
+    background-color: #ccc;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.day {
+    margin-right: 10px;
+}
+.time {
+    font-size: 13px;
+}
+/*last*/
+.result-info .last td,  .result-info .last td a{
+    color: #000;
+}
+.result-info .last .status:before{
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+    background-color: #000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+/*first*/
+.result-info .first .status:after{
+    content: '';
+    position: absolute;
+    width:0;
+    height: 0;
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.result-info td a:hover {
+    color: #3278e6;
+}
+.result-info .row1 {
+    width: 105px;
+    text-align: center;
+    padding:20px;
+    padding-left: 14px;
+    padding-right: 0;
+}
+/*内容*/
+.context {
+    font-size: 14px;
+    padding-left: 0px !important;
+}
+.context a {
+    color: #828282;
+}
+.context a:hover {
+    color: #3278e6;
+}
