@@ -27,85 +27,65 @@ a:hover {
     width: 600px;
 }
 .result-info td {
-    padding: 7px;
     color: #828282;
 }
-.result-info .status {
-    width: 30px;
-    position: relative;
+.result-info a {
+    color: #828282;
 }
-.result-info .status:before{
-    content: '';
-    position: absolute;
-    width: 11px;
-    height: 11px;
-    border-radius: 11px;
-    background-color: #ccc;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+.result-info a:hover {
+    color: #3278e6;
 }
-.result-info .status:after{
-    content: '';
-    position: absolute;
-    width:1px;
-    height: 100%;
-    background-color: #ccc;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
+.result-info .date {
+    width: 105px;
+    text-align: center;
+    padding:20px;
+    padding-left: 14px;
+    padding-right: 25px;
 }
 .day {
     margin-right: 10px;
 }
 .time {
     font-size: 13px;
+    display: inline-block;
+    position: relative;
 }
-/*last*/
-.result-info .last td,  .result-info .last td a{
-    color: #000;
-}
-.result-info .last .status:before{
+.time:before{
     content: '';
     position: absolute;
     width: 11px;
     height: 11px;
     border-radius: 11px;
-    background-color: #000;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 10;
+    background-color: #ccc;
+    right: -31px;
+    top: 6px;
 }
-/*first*/
-.result-info .first .status:after{
+/*last*/
+.result-info .last td,  .result-info .last td a{
+    color: #000;
+}
+.last .time:after {
     content: '';
     position: absolute;
-    width:0;
-    height: 0;
-    background-color: transparent;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 11px;
+    height: 50px;
+    left: 59px;
+    top: -44px;
+    background-color: #fff;
 }
-.result-info td a:hover {
-    color: #3278e6;
-}
-.result-info .row1 {
-    width: 105px;
-    text-align: center;
-    padding:20px;
-    padding-left: 14px;
-    padding-right: 0;
+/*first*/
+.first .time:after {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 50px;
+    left: 59px;
+    top: 17px;
+    background-color: #fff;
 }
 /*内容*/
 .context {
     font-size: 14px;
-    padding-left: 0px !important;
-}
-.context a {
-    color: #828282;
-}
-.context a:hover {
-    color: #3278e6;
+    padding-left: 25px;
+    border-left: 1px solid #ccc;
 }
